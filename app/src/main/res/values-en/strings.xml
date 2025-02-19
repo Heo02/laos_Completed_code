@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ending English Pop-up -->
+    <string name="exit_app_title">Exit App</string>
+    <string name="exit_app_message">Are you sure you want to exit the app?</string>
+    <string name="exit_yes">Exit</string>
+    <string name="exit_no">No</string>
+    <!-- English settings home -->
+    <string name="create_now1">"Now Click the "</string>
+    <string name="create_now2">"icon "</string>
+    <string name="create_now3">above</string>
+    <string name="create_your_own">create your own problems!</string>
+    <!-- English settings selectMethod-->
+    <string name="select_method">Select method</string>
+    <string name="go_upload">Go to upload file</string>
+    <string name="select_category">Create a workbook by selecting a category!</string>
+    <string name="category_conversation">Conversation</string>
+    <string name="category_object">Object</string>
+    <string name="category_food">Food</string>
+    <string name="category_culture">Culture</string>
+    <string name="category_title">Would you like to select a category?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <!-- English settings uploadview-->
+    <string name="file_upload">file upload</string>
+    <string name="speak_seal">Please upload the material you want to create as a workbook!</string>
+    <string name="camera_permission_required">Camera access permission is required.</string>
+    <string name="storage_permission_required">Storage access permission is required.</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="upload_file">Upload File</string>
+    <string name="complete">Complete</string>
+    <string name="no_uploaded_file">No file uploaded.</string>
+    <string name="upload_instruction">Please upload a photo or PDF file.</string>
+    <!-- English settings creatingview-->
+    <string name="creating_in_progress">Creating workbook...</string>
+    <string name="warning_message">Going back or closing will cancel the creation process.</string>
+    <string name="creation_failed">Creation failed: %1$s</string>
+    <!-- English settings createview-->
+    <string name="workbook_saved_notification">Saved workbooks can be viewed anytime in [Storage].</string>
+    <string name="workbook_creation_complete">Workbook Creation Complete</string>
+    <string name="recreate_workbook">Recreate Workbook</string>
+    <string name="save_as_pdf">Save as PDF</string>
+    <string name="problem_sheet">Workbook</string>
+    <string name="answer_sheet">Answer Key</string>
+    <string name="problem_recreation">Problem Recreation</string>
+    <string name="recreate_confirmation">Do you want to create a new problem with the same content?</string>
+    <string name="save_as_pdf_title">Save as PDF</string>
+    <string name="pdf_save_instruction1">You can check the problems in the storage after saving as PDF.</string>
+    <string name="pdf_save_instruction2">Do you want to save?</string>
+    <string name="save">Save</string>
+    <string name="recreation_failed">Recreation failed: %1$s</string>
+    <string name="recreating_problem">Recreating problem...</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="pdf_save_complete">PDF save completed.</string>
+    <string name="pdf_saving">Saving PDF...</string>
+    <!-- English settings meaningview -->
+    <string name="storage">Storage</string>
+    <string name="storage_description">You can check the workbook at once!</string>
+    <!-- English settings createCard-->
+    <string name="workbook">Workbook</string>
+    <string name="answer">Answer Sheet</string>
+    <string name="delete_workbook">Delete Workbook</string>
+    <string name="delete_confirmation">Are you sure you want to delete this workbook?</string>
+    <string name="delete">Delete</string>
+    <string name="delete_failed">Delete failed: %1$s</string>
+    <string name="no_pdf_viewer">No app available to open PDF.</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Laos_project</string>
+    <!-- Lauer Shutdown Pop-up -->
+    <string name="exit_app_title">ອອກຈາກແອບ</string>
+    <string name="exit_app_message">ທານແນໃຈບວາຕອງການອອກຈາກແອບ?</string>
+    <string name="exit_yes">ອອກ</string>
+    <string name="exit_no">ບ</string>
+    <!-- Lao settings  home -->
+    <string name="create_now1">"ຕອນນເທງ"</string>
+    <string name="create_now2">"ໄອຄອນ "</string>
+    <string name="create_now3">ກດໃສ</string>
+    <string name="create_your_own">ສາງບນຫາຂອງທານເອງ!</string>
+    <!-- Lao settings selectMethod-->
+    <string name="select_method">ເລອກວທການ</string>
+    <string name="go_upload">ໄປອບໂຫລດໄຟລ</string>
+    <string name="select_category">ສາງຊດຄາຖາມໂດຍການເລອກໝວດໝ!</string>
+    <string name="category_conversation">ການສນທະນາ</string>
+    <string name="category_object">ວດຖ</string>
+    <string name="category_food">ອາຫານ</string>
+    <string name="category_culture">ວດທະນະທາ</string>
+    <string name="category_title">ທານຕອງການເລອກໝວດໝບ?</string>
+    <string name="confirm">ຢນຢນ</string>
+    <string name="cancel">ຍກເລກ</string>
+    <!-- Lao settings uploadview -->
+    <string name="file_upload">ອບໂຫລດໄຟລ</string>
+    <string name="speak_seal">ກະລນາອບໂຫລດເອກະສານທທານຕອງການສາງເປນຊດຄາຖາມ!</string>
+    <string name="camera_permission_required">ຕອງການສດເຂາເຖງກອງຖາຍຮບ.</string>
+    <string name="storage_permission_required">ຕອງການສດເຂາເຖງພນທເກບຂມນ.</string>
+    <string name="take_photo">ຖາຍຮບ</string>
+    <string name="upload_file">ໂຫລດໄຟລ</string>
+    <string name="complete">ສາເລດ</string>
+    <string name="no_uploaded_file">ບມໄຟລທຖກອບໂຫລດ.</string>
+    <string name="upload_instruction">ກະລນາອບໂຫລດຮບພາບ ຫ ໄຟລ PDF.</string>
+    <!-- Lao settings creatingview-->
+    <string name="creating_in_progress" tools:ignore="MissingTranslation">ກາລງສາງປມແບບຝກຫດ...</string>
+    <string name="warning_message" tools:ignore="MissingTranslation">ການກບຄນຫປດຈະຍກເລກຂະບວນການສາງ.</string>
+    <string name="creation_failed" tools:ignore="MissingTranslation">ການສາງລມເຫລວ: %1$s</string>
+    <!-- Lao settings createview -->
+    <string name="workbook_saved_notification" tools:ignore="MissingTranslation">ປມແບບຝກຫດທບນທກໄວສາມາດເບງໄດທກເວລາໃນ [ຫອງເກບມຽນ].</string>
+    <string name="workbook_creation_complete" tools:ignore="MissingTranslation">ສາເລດການສາງປມແບບຝກຫດ</string>
+    <string name="recreate_workbook" tools:ignore="MissingTranslation">ສາງປມແບບຝກຫດໃໝອກຄງ</string>
+    <string name="save_as_pdf" tools:ignore="MissingTranslation">ບນທກເປນ PDF</string>
+    <string name="problem_sheet" tools:ignore="MissingTranslation">ປມແບບຝກຫດ</string>
+    <string name="answer_sheet" tools:ignore="MissingTranslation">ຄາຕອບ</string>
+    <string name="problem_recreation" tools:ignore="MissingTranslation">ສາງຄາຖາມໃໝ</string>
+    <string name="recreate_confirmation" tools:ignore="MissingTranslation">ທານຕອງການສາງຄາຖາມໃໝດວຍເນອຫາດຽວກນບ?</string>
+    <string name="save_as_pdf_title" tools:ignore="MissingTranslation">ບນທກເປນ PDF</string>
+    <string name="pdf_save_instruction1" tools:ignore="MissingTranslation">ທານສາມາດເບງບນຫາໃນຄງສນຄາໃນຕອນທເກບໄວເປນ PDF.</string>
+    <string name="pdf_save_instruction2" tools:ignore="MissingTranslation">ເຈາຕອງ ການເກບໃນ PDF ບ?</string>
+    <string name="save" tools:ignore="MissingTranslation">ບນທກ</string>
+    <string name="recreation_failed" tools:ignore="MissingTranslation">ການສາງໃໝລມເຫລວ: %1$s</string>
+    <string name="recreating_problem" tools:ignore="MissingTranslation">ກາລງສາງຄາຖາມໃໝ...</string>
+    <string name="please_wait" tools:ignore="MissingTranslation">ກະລນາລຖາ.</string>
+    <string name="pdf_save_complete" tools:ignore="MissingTranslation">ການບນທກ PDF ສາເລດແລວ.</string>
+    <string name="pdf_saving" tools:ignore="MissingTranslation">ກາລງບນທກ PDF...</string>
+    <!-- Lao settings meaningview -->
+    <string name="storage" tools:ignore="MissingTranslation">ບອນເກບມຽນ</string>
+    <string name="storage_description" tools:ignore="MissingTranslation">ເຈາສາມາດກວດເບງປມໄດທນທ!</string>
+    <!-- Lao settings createCard-->
+    <string name="workbook" tools:ignore="MissingTranslation">ປມແບບຝກຫດ</string>
+    <string name="answer" tools:ignore="MissingTranslation">ໃບຄາຕອບ</string>
+    <string name="delete_workbook" tools:ignore="MissingTranslation">ລບປມແບບຝກຫດ</string>
+    <string name="delete_confirmation" tools:ignore="MissingTranslation">ທານແນໃຈບວາຈະລບປມແບບຝກຫດນ?</string>
+    <string name="delete" tools:ignore="MissingTranslation">ລບ</string>
+    <string name="delete_failed" tools:ignore="MissingTranslation">ລມເຫລວໃນການລບ: %1$s</string>
+    <string name="no_pdf_viewer" tools:ignore="MissingTranslation">ບມແອບທສາມາດເປດ PDF ໄດ.</string>
+</resources>

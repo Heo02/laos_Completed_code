@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--업로드 뷰에 필요한 것들-->
+<paths>
+    <cache-path name="cached_files" path="." />
+    <files-path name="files" path="." />
+    <external-files-path name="external_files" path="." />
+    <external-path name="external" path="." />
+    <files-path name="pdf_files" path="." />
+</paths>
