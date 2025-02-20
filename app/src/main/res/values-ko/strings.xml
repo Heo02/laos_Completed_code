@@ -5,11 +5,13 @@
     <string name="exit_app_message">정말로 앱을 종료하시겠습니까?</string>
     <string name="exit_yes">종료</string>
     <string name="exit_no">아니오</string>
+
     <!-- 한국어 설정 home 창 -->
     <string name="create_now1">"지금 위에 "</string>
     <string name="create_now2">"아이콘"</string>
     <string name="create_now3">을 눌러</string>
     <string name="create_your_own">나만의 문제를 생성해 보세요!</string>
+
     <!-- 한국어 설정 selectMethod 창 -->
     <string name="select_method">방식 선택</string>
     <string name="go_upload">파일 업로드 하러 가기</string>
@@ -21,6 +23,7 @@
     <string name="category_title">카테고리를 선택하시겠습니까?</string>
     <string name="confirm">확인</string>
     <string name="cancel">취소</string>
+
     <!-- 한국어 설정 uploadview 창  -->
     <string name="file_upload">파일 업로드</string>
     <string name="speak_seal">문제집으로 만들고 싶은 자료를 업로드 해주세요!</string>
@@ -31,4 +34,41 @@
     <string name="complete">완료</string>
     <string name="no_uploaded_file">업로드된 파일이 없습니다.</string>
     <string name="upload_instruction">사진 또는 PDF 파일을 업로드 해주세요.</string>
+
+    <!-- 한국어 설정 creatingview 창 -->
+    <string name="creating_in_progress">문제집 생성중...</string>
+    <string name="warning_message">뒤로가기 및 종료 시 문제 생성이 취소됩니다.</string>
+    <string name="creation_failed">문제 생성 실패: %1$s</string>
+
+    <!-- 한국어 설정 createview 창  -->
+    <string name="workbook_saved_notification">저장한 문제집은 [보관함]에서 언제든 열람 가능합니다.</string>
+    <string name="workbook_creation_complete">문제집 생성 완료</string>
+    <string name="recreate_workbook">문제집 다시 생성하기</string>
+    <string name="save_as_pdf">PDF로 저장하기</string>
+    <string name="problem_sheet">문제집</string>
+    <string name="answer_sheet">답안지</string>
+    <string name="problem_recreation">문제 재생성</string>
+    <string name="recreate_confirmation">동일한 내용의 새로운 문제를 생성하시겠습니까?</string>
+    <string name="save_as_pdf_title">PDF로 저장하기</string>
+    <string name="pdf_save_instruction1">PDF로 저장하시면 보관함에서 문제 확인이 가능합니다.</string>
+    <string name="pdf_save_instruction2">저장하시겠습니까?</string>
+    <string name="save">저장</string>
+    <string name="recreation_failed">재생성 실패: %1$s</string>
+    <string name="recreating_problem">문제 재생성 중...</string>
+    <string name="please_wait">잠시만 기다려주세요.</string>
+    <string name="pdf_save_complete">PDF 저장이 완료되었습니다.</string>
+    <string name="pdf_saving">PDF 저장 중...</string>
+
+    <!-- 한국어 meaningview 창 -->
+    <string name="storage">보관함</string>>
+    <string name="storage_description">내 문제집을 한 번에 확인할 수 있어요!</string>
+
+    <!-- 한국어 createCard -->
+    <string name="workbook">문제집</string>
+    <string name="answer">답안지</string>
+    <string name="delete_workbook">문제집 삭제</string>
+    <string name="delete_confirmation">정말로 이 문제집을 삭제하시겠습니까?</string>
+    <string name="delete">삭제</string>
+    <string name="delete_failed">삭제 실패: %1$s</string>
+    <string name="no_pdf_viewer">PDF를 열 수 있는 앱이 없습니다.</string>
 </resources>

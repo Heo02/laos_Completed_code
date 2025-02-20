@@ -34,7 +34,7 @@ class LanguageManager(private val context: Context) {
     }
 
     fun getSavedLanguage(): String {
-        return sharedPreferences.getString("selected_language", "lo") ?: "lo"
+        return sharedPreferences.getString("selected_language", "ko") ?: "ko"
     }
 
     fun applyLastSavedLanguage() {

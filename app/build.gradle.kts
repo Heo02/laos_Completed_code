@@ -3,6 +3,7 @@ import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("plugin.serialization")
 }
 
 android {
@@ -78,6 +79,23 @@ dependencies {
     implementation("androidx.camera:camera-camera2:1.4.0-alpha02")
     implementation("androidx.camera:camera-lifecycle:1.4.0-alpha02")
     implementation ("androidx.camera:camera-view:1.4.0-alpha02")
+
+    // 코루틴과 Tasks API를 통합하기 위한 의존성 추가
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4")
+
+    // ML Kit OCR 의존성 추가
+    implementation ("com.google.mlkit:text-recognition:16.0.1")
+
+    // Serializable 어노테이션 사용을 위한 의존성 추가(JSON 변환)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+
+    //itext7 라이브러리 사용을 위한 의존성 추가
+    implementation ("com.itextpdf:itext7-core:7.2.5")
+    implementation ("com.itextpdf:font-asian:7.2.5")
+    implementation ("com.itextpdf:layout:7.2.5")
+
+    //이미지 캐싱
+    implementation ("io.coil-kt:coil:2.4.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

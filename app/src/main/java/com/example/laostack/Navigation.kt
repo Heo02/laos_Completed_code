@@ -1,6 +1,7 @@
 package com.example.laostack
 
 import android.app.AlertDialog
+import android.net.Uri
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
@@ -8,12 +9,18 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.example.laostack.api.APIRetrofit.apiService
+import com.example.laostack.view.home.CreateView
+import com.example.laostack.view.home.CreatingView
 import com.example.laostack.view.home.HomeView
 import com.example.laostack.view.home.SelectMethodView
 import com.example.laostack.view.home.UploadView
+import kotlinx.serialization.json.Json
 
 @Composable
 fun Navigation() {
@@ -35,7 +42,49 @@ fun Navigation() {
 
         // 파일 업로드 화면
         composable("upload_file") { UploadView(navController) }
+
+        // 생성 중 화면
+        composable(
+            route = "Creating/{category}/{imageUri}",
+            arguments = listOf(
+                navArgument("category") {
+                    type = NavType.StringType
+                    nullable = true
+                },
+                navArgument("imageUri") {
+                    type = NavType.StringType
+                    nullable = true
+                }
+            )
+        ) { backStackEntry ->
+            val categoryParam = backStackEntry.arguments?.getString("category")
+            val imageUriString = backStackEntry.arguments?.getString("imageUri")
+
+            val category = if (categoryParam != "null") categoryParam else null
+            val imageUri = imageUriString?.let {
+                if (it != "null") Uri.parse(it) else null
+            }
+            CreatingView(navController, apiService, category, imageUri)
+        }
+
+        // 문제 템플릿 화면
+        composable(
+            route = "Create/{message}/{createToOCR}",
+            arguments = listOf(
+                navArgument("message") { type = NavType.StringType },
+                navArgument("createToOCR") { type = NavType.BoolType }
+            )
+        ) { backStackEntry ->
+            val messageJson = backStackEntry.arguments?.getString("message")
+            val createToOCR = backStackEntry.arguments?.getBoolean("createToOCR") ?: false
+            val message = messageJson?.let {
+                Json.decodeFromString<CreateTextMessage>(it)
+            }
+            CreateView(navController, apiService, message, createToOCR)
+        }
     }
+
+
 
     // 뒤로가기 버튼 동작시 완전 종료 여부 묻기
     BackHandler {
