@@ -58,26 +58,4 @@ interface APIInterface {
         @Query("wb_id") wbId: Int,
         @Part file: MultipartBody.Part
     ): Response<UploadResponse>
-
-    // 저장된 문제집 전체 조회
-    @GET("/api/workbook/all")
-    suspend fun getAllWorkbooks(): Response<WorkbooksResponse>
-
-    // 문제지 PDF 다운
-    @GET("/api/workbook/download/{wb_id}")
-    suspend fun downloadWorkbook(
-        @Path("wb_id") wbId: String,
-    ): Response<ResponseBody>
-
-    // 답안지 PDF 다운
-    @GET("/api/workbook/answer/download/{wb_id}")
-    suspend fun downloadAnswer(
-        @Path("wb_id") wbId: String,
-    ): Response<ResponseBody>
-
-    // 문제집 삭제
-    @DELETE("/api/workbook/delete")
-    suspend fun deleteWorkbook(
-        @Query("wb_id") wbId: Int
-    ): Response<DeleteWorkbookResponse>
 }

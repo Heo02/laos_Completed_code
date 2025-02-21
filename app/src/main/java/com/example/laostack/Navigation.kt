@@ -20,7 +20,6 @@ import com.example.laostack.view.home.CreatingView
 import com.example.laostack.view.home.HomeView
 import com.example.laostack.view.home.SelectMethodView
 import com.example.laostack.view.home.UploadView
-import com.example.laostack.view.meaning.MeaningView
 import kotlinx.serialization.json.Json
 
 @Composable
@@ -84,8 +83,6 @@ fun Navigation() {
             CreateView(navController, apiService, message, createToOCR)
         }
 
-        // Meaning Screen
-        composable("meaning") { MeaningView(navController, apiService) }
     }
 
 
