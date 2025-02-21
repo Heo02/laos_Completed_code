@@ -201,8 +201,8 @@ class CreatingViewModel(
         return when (language) {
             "ko" -> "Korea"
             "en" -> "English"
-            "lo" -> "Lao Language"
-            else -> "Lao Language"
+            "lo" -> "Tai"
+            else -> "Tai"
         }
     }
 

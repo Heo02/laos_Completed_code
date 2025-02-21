@@ -91,11 +91,11 @@ fun MainBottomBar(
             BottomBarButton(
                 icon = R.drawable.icon_storage,
                 contentDescription = "보관함",
-                isSelected = currentScreen == "meaning_view",
+                isSelected = currentScreen == "meaning",
                 onClick = {
-                    if (currentScreen != "meaning_view") {
-                        navController.navigate("meaning_view") {
-                            popUpTo("meaning_view") { inclusive = true }
+                    if (currentScreen != "meaning") {
+                        navController.navigate("meaning") {
+                            popUpTo("meaning") { inclusive = true }
                         }
                     }
                 },

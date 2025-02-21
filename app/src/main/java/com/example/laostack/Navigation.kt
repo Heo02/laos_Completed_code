@@ -20,6 +20,7 @@ import com.example.laostack.view.home.CreatingView
 import com.example.laostack.view.home.HomeView
 import com.example.laostack.view.home.SelectMethodView
 import com.example.laostack.view.home.UploadView
+import com.example.laostack.view.meaning.MeaningView
 import kotlinx.serialization.json.Json
 
 @Composable
@@ -34,16 +35,16 @@ fun Navigation() {
 
     NavHost(navController = navController, startDestination = startDestination) {
 
-        // 메인 홈 화면
+        // Home Screen
         composable("main") { HomeView(navController) }
 
-        // 방식 선택 화면
+        // SelectMethod Screen
         composable("select_method") { SelectMethodView(navController) }
 
-        // 파일 업로드 화면
+        // Upload Screen
         composable("upload_file") { UploadView(navController) }
 
-        // 생성 중 화면
+        // Creating Screen
         composable(
             route = "Creating/{category}/{imageUri}",
             arguments = listOf(
@@ -67,7 +68,7 @@ fun Navigation() {
             CreatingView(navController, apiService, category, imageUri)
         }
 
-        // 문제 템플릿 화면
+        // Create Screen
         composable(
             route = "Create/{message}/{createToOCR}",
             arguments = listOf(
@@ -82,6 +83,9 @@ fun Navigation() {
             }
             CreateView(navController, apiService, message, createToOCR)
         }
+
+        // Meaning Screen
+        composable("meaning") { MeaningView(navController, apiService) }
     }
 
 
